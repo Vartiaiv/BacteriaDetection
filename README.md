@@ -1,6 +1,6 @@
 # BacteriaDetection
 
-**Quick help: If you have** ``3Darray.mat`` **in your working folder run the program in the working folder with default parameters on the MATLAB command line by typing "BacteriaDetection". Otherwise give a 3D array as the first parameter.**
+**Quick help: If you have** ``3Darray.mat`` **in your working folder, run the program with default parameters on the MATLAB command line by typing "BacteriaDetection".** **Otherwise, give a complex 3D array from workspace as the first parameter.**
 
 
 ### The MATLAB help text for the package (paraphrased):
