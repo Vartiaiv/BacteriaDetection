@@ -9,7 +9,7 @@
 %   default input path: './3Darray.mat' 
 %   default output path './default_output/detection'
 % 
-%   List of name-value pairs, default values (and possible options):
+%   List of name-value parameters, default values (and possible options):
 %     frameType                'abs'    ('abs', 'ang')   use either magnitude or phase for imgs     
 %     blackShiftFactor          0.2             scalar   helps with contrast between 0...1
 %     selectROI                true      (true, false)   hand-select region, fullscreen by default
