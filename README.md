@@ -1,11 +1,11 @@
 # BacteriaDetection
 
-**You can download the package and run the program in the working folder with default parameters on the MATLAB command line by typing "BacteriaDetection"**
+**Quick help: If you have** ``3Darray.mat`` **in your working folder run the program in the working folder with default parameters on the MATLAB command line by typing "BacteriaDetection". Otherwise give a 3D array as the first parameter.**
 
-The MATLAB help text for the package:
 
-**BacteriaDetection**  Detect and track moving bacteria from an image
-                   sequence
+### The MATLAB help text for the package (paraphrased):
+
+**BacteriaDetection**     Detect and track moving bacteria from an image sequence
 
   There are three output files 
   - detection frames
@@ -16,7 +16,7 @@ default input path: ``./3Darray.mat``
   
 default output path ``./default_output/detection`` 
 
-List of name-value pairs, default values (and possible options):
+List of name-value parameters, default values (and possible options):
 
     frameType                'abs'    ('abs', 'ang')   use either magnitude or phase for imgs
     blackShiftFactor          0.2             scalar   helps with contrast between 0...1
