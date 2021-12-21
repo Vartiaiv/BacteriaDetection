@@ -6,7 +6,7 @@
 %   - mask frames
 %   - key points frames.
 % 
-%   default input path: './test_video/physical/3Darray.mat' 
+%   default input path: './3Darray.mat' 
 %   default output path './default_output/detection'
 % 
 %   List of name-value pairs, default values (and possible options):
@@ -35,7 +35,7 @@
 %       BACTERIADETECTION() uses default input and output file paths
 %       BACTERIADETECTION(INPATH) uses INPATH as the input path and the default output path
 %       BACTERIADETECTION(INPATH, OUTPATH) uses INPATH as the input path and OUTPATH as the output path
-%       BACTERIADETECTION(Z, OUTPATH) uses array Z from workspace as input
+%       BACTERIADETECTION(Z, OUTPATH) uses complex 3D array Z from workspace as input
 %       BACTERIADETECTION(..., 'name', 'value') name-value pairs after 2 positional arguments
 % 
 % See also DETECTORBFEATURES, IMOPEN, IMCLOSE, VISION.BLOBANALYSIS, CONFIGUREKALMANFILTER
@@ -53,7 +53,7 @@ function BacteriaDetection(varargin)
     isNumOrPath = @(x) isValidPath(x) || isnumeric(x);
                     
     % DEFAULT Positional arguments
-    z3DarrayPath = './test_video/physical/3Darray.mat';
+    z3DarrayPath  = './3Darray.mat';
     detectionPath = './default_output/detection';    
     addOptional(p, 'zInput',    z3DarrayPath,  isNumOrPath);
     addOptional(p, 'outFile',   detectionPath, isValidPath);
