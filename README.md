@@ -12,7 +12,7 @@ The MATLAB help text for the package:
   - mask frames
   - key points frames.
 
-default input path: ``./test_video/physical/3Darray.mat``
+default input path: ``./3Darray.mat``
   
 default output path ``./default_output/detection`` 
 
@@ -45,7 +45,7 @@ Usage
     BacteriaDetection()                      uses default input and output file paths     
     BacteriaDetection(INPATH)                uses INPATH as the input path and the default output path
     BacteriaDetection(INPATH, OUTPATH)       uses INPATH as the input path and OUTPATH as the output path
-    BacteriaDetection(Z, OUTPATH)            uses array Z from workspace as input
+    BacteriaDetection(Z, OUTPATH)            uses complex 3D array Z from workspace as input
     BacteriaDetection(..., 'name', 'value')  name-value pairs after 2 positional arguments
 
 See also detectORBFteaures, imopen, imclose, vision.BlobAnalysis, configureKalmanFilter
